@@ -14,4 +14,4 @@
   <br>
   "User entered no"
   <br>
-- `Test the program` and correct any syntax or runtime errors.
+- `Test the program` and correct any syntax, runtime or logic errors.
