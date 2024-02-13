@@ -12,12 +12,29 @@
 // "User entered no"
 //
 // (TO COMPLETE)
+import java.util.Scanner;
+
 public class Main {
+
     public static void main(String[] args) {
 
-      System.out.println("Hello World!");
+        // create Scanner object for user input
+        Scanner scanner = new Scanner(System.in);
 
+        // prompt user to enter "yes" or "no"
+        System.out.print("Enter 'yes' or 'no': ");
+        String userInput = scanner.next().toLowerCase(); // Convert input to lowercase
 
+        // close the scanner to avoid resource leaks
+        scanner.close();
+
+        // output based on user input
+        if (userInput.equals("yes")) {
+            System.out.println("User entered yes");
+        } else if (userInput.equals("no")) {
+            System.out.println("User entered no");
+        } else {
+            System.out.println("Invalid input. Please enter 'yes' or 'no'.");
+        }
     }
-
 }
